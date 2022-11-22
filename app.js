@@ -43,7 +43,7 @@ const playerSelection = "rock";
 const game = () => {
     for (let i = 0; i < 5; i++) {
     const computerSelection  = computerPlay () ;
-    const playerSelection = prompt('choose')
+    const playerSelection = prompt('choose your object').toLowerCase();
    console.log(1,playRound(playerSelection, computerSelection));
     
    }
@@ -51,7 +51,7 @@ const game = () => {
 if (playerScore > compScore) {
     return " you beat your advesary"
  } else if ( playerScore < compScore) {
-    return " you advesary wins" 
+    return " your advesary wins" 
  } else { 
     return " tie !"
  }
